@@ -1,0 +1,19 @@
+﻿@model object
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<div>
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    {
+        <input type="text" name="userName" />
+        <input type="password" name="password" />
+        <button> Login</button>
+    }
+</div>
+</body>
+</html>
